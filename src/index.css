@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*  note: this project isn't optimized well for resizing or mobile views, it's more about proof of concept   */
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: auto;
+  width: 800px;
+  background-color: black;
+}
+
+.header--container {
+  background-color: rgb(110, 97, 50);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  color: antiquewhite;
+  text-shadow: 1.2px 1.2px black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 10px 0px 10px;
+  border-radius: 10px;
+}
+
+/*  globe icon  */
+.header--container img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.card--container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: left;
+  align-items: left;
+  margin-bottom: 15px;
+  border: 2px solid black;
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+
+.card--image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: left;
+  position: relative left;
+  padding: 10px 10px;
+  max-height: 400px;
+  max-width: 400px;
+  border-radius: 8%;
+}
+
+.card--content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: left;
+  align-items: left;
+  min-width: 300px;
+  margin: 10px;
+  font-size: larger;
+}
+
+.card--content a {
+  padding: 10px 10px;
+  color: gray;
+}
+
+.card--content h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card--pin {
+  width: 25px;
+}
+
+.card--location {
+  color: rgb(87, 87, 87);
+  margin-bottom: -20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.card--year {
+  margin: -10px 0px;
+  font-weight: bold;
+}
+
+.card--description {
+  color: rgb(87, 87, 87);
 }
